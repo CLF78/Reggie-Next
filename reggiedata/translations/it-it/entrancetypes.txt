@@ -1,0 +1,30 @@
+0:Normale
+27:Entrata su Porta
+2:Uscita da Porta
+3:Tubo Rivolto Su
+4:Tubo Rivolto Giù
+5:Tubo Rivolto a Sinistra
+6:Tubo Rivolto a Destra
+16:Mini Tubo Rivolto Su
+17:Mini Tubo Rivolto Giù
+18:Mini Tubo Rivolto Sinistra
+19:Mini Tubo Rivolto Destre
+22:Pipe Rivolto Verso lo Schermo
+7:Caduta Veloce
+8:Schianto a Terra
+9:Scivolo
+10:Nuoto
+20:Salto (Rivolto a Destra)
+24:Salto (Rivolto a Sinistra)
+21:Entrata su Pianta
+23:Entrata al Boss (Fermo)
+25:Entrata Boss (Saltando a Destra)
+26:Entrata Boss (Cadendo verso Destra)
+1:Normale?
+11:Normale (Spostato Lievemente)
+12:Normale (Spostato Lievemente)
+13:Normale (Spostato Lievemente)
+14:Sconosciuto
+15:Sconosciuto
+28:Sconosciuto (Crash)
+29:Sconosciuto (Freeze)

@@ -1,0 +1,30 @@
+0:Normal
+27:Tür Eingang
+2:Tür Ausgang
+3:Röhre nach Oben
+4:Röhre nach Unten
+5:Röhre nach Links
+6:Röhre nach Rechts
+16:Mini-Röhre nach Oben
+17:Mini-Röhre nach Unten
+18:Mini-Röhre nach Links
+19:Mini-Röhre nach Rechts
+22:Bildschirmröhre
+7:Fallend (Schnell)
+8:Stampfattacke
+9:Rutschend
+10:Schwimmend
+20:Springend (Nach Rechts)
+24:Springend (Nach Links)
+21:Ranken Eingang
+23:Boss Eingang (Stehend)
+25:Boss Eingang (Springend Rechts)
+26:Boss Eingang (Fallend Rechts)
+1:Normal?
+11:Normal (Falsch positioniert)
+12:Normal (Falsch positioniert)
+13:Normal (Falsch positioniert)
+14:Unbekannt
+15:Unbekannt
+28:Unbekannt (Absturz)
+29:Unbekannt (Einfrieren)

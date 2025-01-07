@@ -1,0 +1,957 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Reggie! Next sample translations XML -->
+<!-- &lt;   = < -->
+<!-- &gt;   = > -->
+<!-- &quot; = " -->
+<!-- &lt;font color=&quot;COLOR&quot;&gt;TEXT TEXT TEXT.&lt;/font&gt; = Colored Text -->
+<!-- Bracketed placeholders (such as [id], [num], [x], [y], etc.) should not be changed in any way, as the editor replaces these with proper data -->
+
+<!-- The contents of this file are based on (and should be identical to) the default English strings in translation.py -->
+<!-- Removed strings are self-closing and do not contain any text. These can be ignored while translating -->
+
+<strings>
+	<section id="AboutDlg">
+		<string id="0">Über Reggie Next</string>
+		<string id="1">[i]Reggie Next[/i] Level Editor</string>
+		<string id="2">Der [i]Reggie Next Level Editor[/i] ist ein Open-Source-Projekt, das 2010 von Treeki gestartet und 2013 von RoadrunnerWMC geforkt wurde. Es soll dir Spaß dabei bereiten, eigene New Super Mario Bros. Wii[tm]-kompatible Level zu entwerfen.</string>
+		<string id="3">Interesse? Trete dem [a href="https://discord.gg/XnQJnwa"]Discord server[/a] bei um dich mit den Entwicklern in Verbindung zu setzen und Fragen zu stellen.[br]</string>
+	</section>
+	<section id="ErrorDlg">
+		<string id="0">Eine [i]unhandled exception[/i] ist aufgetreten. Bitte melde das Problem auf dem Horizon Discord-Server.[br]Es wird ein Protokoll geschrieben in "[log]"[br][br]Fehlerinformationen:[br]</string>
+	</section>
+	<section id="AreaChoiceDlg">
+		<string id="0">Wähle eine Area</string>
+		<string id="1">Area [num]</string>
+		<string id="2">Du hast die maximale Anzahl an Areas in diesem Level erreicht.[br]Aufgrund der Beschränkungen des Spiels erlaubt Reggie Next nur das Hinzufügen von bis zu 4 Areas zu einem Level.</string>
+	</section>
+	<section id="AreaCombobox">
+		<string id="0">Area [num]</string>
+	</section>
+	<section id="AreaDlg">
+		<string id="0">Area Optionen</string>
+		<string id="1">Tilesets</string>
+		<string id="2">Einstellungen</string>
+		<string id="3">Timer:</string>
+		<string id="4">[b]Timer:[/b][br]Stellt die Spielzeit für das Level ein, in "Mario Sekunden" (ca. 0,825 echte Sekunden).[br][b]Midway Timer Info:[/b] Der Midway Timer wird berechnet, indem man 200 Sekunden von diesem Wert abzieht. Da das Spiel die Zeiteinstellung der Area verwendet, in der sich die Midway Flag befindet, ist es möglich, ein eigenes Zeitlimit zu wählen, wenn du die Midway Flag in einer andere Area als Area 1 platzierst. Setze einfach die Zeit für diese Area auf die gewünschte Zeit für die Midway Flag + 200 Sekunden.</string>
+		<string id="5">ID für Start-Eingang:</string>
+		<string id="6">[b]ID für Start-Eingang:[/b][br]Legt die Eingangs-ID fest, die beim Laden von der Weltkarte verwendet wird</string>
+		<string id="7">Wrap across Edges (Mario erscheint auf der anderen Bildseite)</string>
+		<string id="8">[b]Wrap across Edges:[/b][br]Lässt die Bildränder umbrechen[br]Warnung: Diese Option kann dazu führen, dass das Spiel abstürzt oder sich seltsam verhält. Das Umbrechen funktioniert nur dann korrekt, wenn die Area auf die richtige Weise eingerichtet ist; siehe Münzkampf 1 (Coin Battle 1) für ein Beispiel.</string>
+		<string id="9" />
+		<string id="10" />
+		<string id="11">Pa0 Standard</string>
+		<string id="12">Pa1 Stage</string>
+		<string id="13">Pa2 Background</string>
+		<string id="14">Pa3 Interaktiv</string>
+		<string id="15">Kein Tileset</string>
+		<string id="16">[CUSTOM]</string>
+		<string id="17">[CUSTOM] [name]</string>
+		<string id="18" />
+		<string id="19" />
+		<string id="20" />
+		<string id="21" />
+		<string id="22" />
+		<string id="23" />
+		<string id="24" />
+		<string id="25" />
+		<string id="26" />
+		<string id="27" />
+		<string id="28">Name</string>
+		<string id="29">Datei</string>
+		<string id="30">(None)</string>
+		<string id="31">Tileset (Pa[slot]):</string>
+		<string id="32">Toad Haus Typ:</string>
+		<stringlist id="33">
+			<entry>Kein Toad Haus</entry>
+			<entry>Star Toad Haus</entry>
+			<entry>Power-Up Toad Haus</entry>
+			<entry>1-UP Toad Haus</entry>
+		</stringlist>
+		<string id="34">Credits (Abspann)</string>
+		<string id="35">[b]Credits:[/b][br]Aktiviert den Abspann-Modus des Spiels für diese Area[br][b]Vorsicht:[/b] Dies verändert den Spielmodus grundlegend, für geeignete Setups siehe dazu das retail Abspann-Level.</string>
+		<string id="36">Ambush (Hinterhalt)</string>
+		<string id="37">[b]Ambush:[/b][br]Aktiviert den Hinterhalt-Modus des Spiels für diese Area[br][b]Vorsicht:[/b] Dies verändert den Spielmodus grundlegend, für geeignete Setups siehe dazu jedes beliebe retail Hinterhalt-Level.</string>
+		<string id="38">Unbekannte Option 1</string>
+		<string id="39">[b]Unbekannte  Option 1:[/b] Wir haben noch nicht herausfinden können, was diese Option bewirkt oder ob sie überhaupt etwas bewirkt. Diese Option ist in den meisten Levels ausgeschaltet.</string>
+		<string id="40">Unbekannte Option 2</string>
+		<string id="41">[b]Unbekannte Option 2:[/b] Wir haben noch nicht herausfinden können, was diese Option bewirkt oder ob sie überhaupt etwas bewirkt. Diese Option ist in den meisten Levels eingeschaltet.</string>
+		<string id="42">Unbekannte Option 3</string>
+		<string id="43">[b]Unbekannte Option 3:[/b] Wir haben noch nicht herausfinden können, was diese Option bewirkt oder ob sie überhaupt etwas bewirkt.</string>
+		<string id="44">Unbekannte Option 4</string>
+		<string id="45">[b]Unbekannte Option 4:[/b] Wir haben noch nicht herausfinden können, was diese Option bewirkt oder ob sie überhaupt etwas bewirkt.</string>
+		<string id="46">Geladene Sprites</string>
+		<string id="47">Sprite hinzufügen</string>
+		<string id="48">Ausgewähltes Sprite entfernen</string>
+		<string id="49">Aktuelle Sprites</string>
+		<string id="50">Benutzerdefiniert</string>
+		<string id="51">Auf der linken Seite befindet sich eine Liste der Sprites, die bereits in der Area vorhanden sind. Auf der rechten Seite kannst du weitere Sprites hinzufügen, die du laden möchtest.</string>
+	</section>
+	<section id="AutoSaveDlg">
+		<string id="0">Automatisch gespeichertes Backup gefunden!</string>
+		<string id="1">Reggie Next hat einige Leveldaten gefunden, die nicht gespeichert wurden - möglicherweise durch einen Absturz des Editors oder deines Computers. Möchtest du dieses Level wiederherstellen?[br][br]Wenn du Nein wählst, werden die automatisch gespeicherten Leveldaten gelöscht und sind nicht mehr zugänglich.[br][br]Ursprünglicher Dateipfad: [path]</string>
+		<string id="2">Das Level hat ungespeicherte Änderungen.</string>
+		<string id="3">Möchtest du sie speichern?</string>
+	</section>
+	<section id="BGDlg">
+		<string id="0">Hintergründe (Backgrounds)</string>
+		<stringlist id="1">
+			<entry>Keine Bewegung</entry>
+			<entry>0.125x</entry>
+			<entry>0.25x</entry>
+			<entry>0.375x</entry>
+			<entry>0.5x</entry>
+			<entry>0.625x</entry>
+			<entry>0.75x</entry>
+			<entry>0.875x</entry>
+			<entry>1x</entry>
+			<entry>Keine Bewegung</entry>
+			<entry>1.2x</entry>
+			<entry>1.5x</entry>
+			<entry>2x</entry>
+			<entry>4x</entry>
+		</stringlist>
+		<string id="2">Zone [num]</string>
+		<string id="3">Kulisse (Scenery)</string>
+		<string id="4">Hintergrund (Backdrop)</string>
+		<string id="5">Position:</string>
+		<string id="6">X:</string>
+		<string id="7">[b]Position (X):[/b][br]Legt den horizontalen Versatz des Hintergrunds fest</string>
+		<string id="8">Y:</string>
+		<string id="9">[b]Position (Y):[/b][br]Legt den vertikalen Versatz des Hintergrunds fest</string>
+		<string id="10">Scroll Rate:</string>
+		<string id="11">[b]Scroll Rate (X):[/b][br]Ändert die Geschwindigkeit, mit der sich der Hintergrund im Verhältnis zu Mario bewegt, wenn dieser sich horizontal bewegt. Werte über 1x können zu Störungen führen!</string>
+		<string id="12">[b]Scroll Rate (Y):[/b][br]Ändert die Geschwindigkeit, mit der sich der Hintergrund im Verhältnis zu Mario bewegt, wenn er sich vertikal bewegt. Werte über 1x können zu Störungen führen!</string>
+		<string id="13">Zoomstufe:</string>
+		<string id="14">[b]Zoom:[/b][br]Legt die Zoomstufe des Hintergrunds fest</string>
+		<stringlist id="15">
+			<entry>Original (100%)</entry>
+			<entry>125%</entry>
+			<entry>150%</entry>
+			<entry>200%</entry>
+		</stringlist>
+		<string id="16">Vorschau</string>
+		<string id="17">[name] ([hex])</string>
+		<string id="18">(Custom)</string>
+		<string id="19">Hintergrund Slots (X, Y, Z):</string>
+		<string id="20">Ausrichtungsmodus: Diese Kombination von Hintergründen resultiert in folgendem Modus:[br][br][mode]</string>
+		<stringlist id="21">
+			<entry>[b][0, 0, X] Modus 0a*:[/b] Hintergrund am Zonenboden ausgerichtet[br][b][X, Y, 0] Modus 0b*:[/b] Hintergrund am Zonenboden ausgerichtet, und wiederholender Hintergrund darüber[br][b][0, Y, Y] Modus 0c*; Y ist nicht 0:[/b] Der Hintergrund ist am oberen Rand der Zone ausgerichtet, aber um eine Hintergrundhöhe abgesenkt[br]
+			[b][Y, 0, Y] Modus 0d*; Y ist nicht 0:[/b] Hintergrund an der Zone unten ausgerichtet, abwechselnd mit nichts, und um eine Hintergrundhöhe angehoben[br][br]* = Inoffizieller Name[br][br][b]0[/b] bezeichnet leeren BG Slot 0001 oder 000a</entry>
+			<entry>[b][X, Y, X] Modus 1; Y ist weder 0 noch X:[/b] Zwei alternierende Hintergründe[br][br][b]0[/b] bezeichnet leeren BG Slot 0001 oder 000a</entry>
+			<entry>[b][Y, X, X] Modus 2; Y ist weder 0 noch X:[/b] Hintergrund, der am oberen Bereich ausgerichtet ist, und ein anderer sich wiederholender Hintergrund darunter[br][br][b]0[/b] bezeichnet leeren BG Slot 0001 oder 000a</entry>
+			<entry>[b][Y, 0, X] Modus 3; Y ist weder 0 noch X:[/b] Hintergrund am unteren Bereich ausgerichtet, aber um eine Hintergrundhöhe erhöht[br][br][b]0[/b] bezeichnet leeren BG Slot 0001 oder 000a</entry>
+			<entry>[b][0, Y, X] Modus 4; Y ist weder 0 noch X:[/b] Hintergrund ist am unteren Bereich ausgerichtet[br][br][b]0[/b] bezeichnet leeren BG Slot 0001 oder 000a</entry>
+			<entry>[b][X, X, X] Modus 5:[/b] sich vertikal wiederholender Hintergrund, der am Zonenboden ausgerichtet ist[br][br][b]0[/b] bezeichnet leeren BG Slot 0001 oder 000a</entry>
+			<entry>[b][Y, Y, X] Modus 6; Y ist nicht 0:[/b] Hintergrund am Zonenboden ausgerichtet, und sich wiederholender Hintergrund darüber[br][br][b]0[/b] bezeichnet leeren BG Slot 0001 oder 000a</entry>
+			<entry>[b][X, Y, Z] Modus 7; Keiner von ihnen ist 0:[/b] Hintergrund am Zonenboden ausgerichtet, sich wiederholender Hintergrund darüber, und BgB ist deaktiviert[br][br][b]0[/b] bezeichnet leeren BG Slot 0001 oder 000a</entry>
+		</stringlist>
+	</section>
+	<section id="ChangeGamePath">
+		<string id="0">Wähle den [i]Stage[/i] Ordner für [game]</string>
+		<string id="1">Fehler</string>
+		<string id="2">Dieser Ordner enthält nicht alle Dateien aus dem extrahierten New Super Mario Bros. Wii Stage-Ordner.</string>
+		<string id="3">Dieser Ordner scheint nicht die erforderlichen Dateien zu enthalten. Um Reggie Next im New Super Mario Bros. Wii-Modus verwenden zu können, benötigst du den Stage-Ordner von New Super Mario Bros. Wii, einschließlich des Texture-Ordners und der darin enthaltenen Level-Dateien.</string>
+		<string id="4">Wähle den [i]Texture[/i] Ordner für [game]</string>
+	</section>
+	<section id="Comments">
+		<string id="0">[x], [y]: [text]</string>
+		<string id="1">[b]Kommentar[/b][br]bei Pos: [x], [y]</string>
+		<string id="2"> - </string>
+		<string id="3">(empty)</string>
+		<string id="4">...</string>
+	</section>
+	<section id="DeleteArea">
+		<string id="0">Bist du [b]sicher[/b], dass du diesen Bereich löschen willst?[br][br]Das Level wird danach automatisch gespeichert - es gibt keine Möglichkeit,[br]die Löschung rückgängig zu machen oder das Level wiederherzustellen!</string>
+	</section>
+	<section id="Diag">
+		<string id="0">Level Diagnose Tool</string>
+		<string id="1" />
+		<string id="2">Einige Objekte im Level können nicht in den Tileset-Dateien gefunden werden.</string>
+		<string id="3">In dieser Area befinden sich Sprites, die bekanntermaßen zum Absturz des Spiels führen.</string>
+		<string id="4">Es gibt Sprites in dieser Area die Einstellungen haben, von denen bekannt ist, dass sie das Spiel zum Absturz bringen.</string>
+		<string id="5">Es sind zu viele Sprites in dieser Area.</string>
+		<string id="6">Es befinden sich Eingänge mit identischer ID in dieser Area.</string>
+		<string id="7">Es gibt keinen Start-Eingang zu dieser Area.</string>
+		<string id="8">Der Start-Eingang ist zu nah an der linken Kante des Bildschirms.</string>
+		<string id="9">Ein Eingang befindet sich außerhalb der Zone.</string>
+		<string id="10">Es gibt mehr als 6 Zonen in dieser Area.</string>
+		<string id="11">Es gibt keine Zonen in dieser Area.</string>
+		<string id="12">Einige Zonen sind zu nah beieinander platziert.</string>
+		<string id="13">Eine Zone befindet sich zu nah an den Rändern der Area.</string>
+		<string id="14">Einige Zonen haben BIAS nicht aktiviert.</string>
+		<string id="15">Einige Zonen sind zu groß.</string>
+		<string id="16" />
+		<string id="17">Gefundene Probleme innerhalb dieser Area:</string>
+		<string id="18">Dieses Level ist:</string>
+		<string id="19">Gut</string>
+		<string id="20">In dieser Area wurden keine Probleme gefunden, und das Spiel sollte korrekt laden. Wenn dennoch Probleme auftreten,[br] sollte die Diagnose in anderen Areas erneut durchgeführt werden.</string>
+		<string id="21">Problematisch</string>
+		<string id="22">Es gibt einige Dinge in dieser Area, die das Level zum Absturz bringen können. Wenn weiterhin Probleme bestehen, überprüfe alles auf dieser Liste und versuchen, den Test in anderen Areas erneut durchzuführen.</string>
+		<string id="23">Kaputt</string>
+		<string id="24">In dieser Area wurden Probleme gefunden, die zu Abstürzen im Spiel führen können. Diese Probleme sind unten aufgeführt.</string>
+		<string id="25">Repariere ausgewählte Items...</string>
+		<string id="26">Du kannst mehrere Items gleichzeitig auswählen</string>
+		<string id="27">Bist du sicher?</string>
+		<string id="28">Bist du sicher dass du die ausgewählten Probleme beheben möchtest? Dies kann [b]nicht[/b] rückgängig gemacht werden!</string>
+		<string id="29">Repariere Probleme...</string>
+	</section>
+	<section id="EntranceDataEditor">
+		<string id="0">ID:</string>
+		<string id="1">[b]ID:[/b][br]Muss sich von allen anderen IDs unterscheiden</string>
+		<string id="2">Typ:</string>
+		<string id="3">[b]Typ:[/b][br]Stellt ein, wie der Eingang sich verhält</string>
+		<string id="4">Ziel ID:</string>
+		<string id="5">[b]Ziel ID:[/b][br]Hierhin wird der Spieler beim Betreten des Eingangs transportiert. Wenn dieser Eingang ins Leere führt, setze diesen Wert auf 0.</string>
+		<string id="6">Ziel Area:</string>
+		<string id="7">[b]Ziel Area:[/b][br]Wenn dieser Eingang nirgendwo hinführt oder das Ziel in dieser Area liegt, setze diesen Wert auf 0.</string>
+		<string id="8">Betretbar</string>
+		<string id="9">[b]Betretbar:[/b][br]Wenn dies bei einem Pipe-Eingang oder einem Türeingang aktiviert ist, kann Mario das Rohr/die Tür betreten. Wenn es nicht aktiviert ist, kann er sie nicht betreten. Das Verhalten bei anderen Arten von Eingängen ist unbekannt/undefiniert.</string>
+		<string id="10">Unbekannte Flag</string>
+		<string id="11">[b]Unbekannte Flag:[/b][br]Dieses Kästchen ist bei einigen Eingängen im Spiel aktiviert, aber wir haben noch nicht herausgefunden, was es bewirkt (oder ob es überhaupt etwas bewirkt).</string>
+		<string id="12">Verbundene Pipe</string>
+		<string id="13">[b]Verbundene Pipe:[/b][br]Mit diesem Kästchen kann eine ungenutzte/kaputte Funktion im Spiel aktiviert werden. Sie ermöglicht es, dass die Pipe wie die Rohre in SMB3 funktioniert, wo Mario einfach durch die Pipe geht. Allerdings funktioniert es nicht richtig.</string>
+		<string id="14">Verbundene Pipe Rückwärts</string>
+		<string id="15">[b]Verbundene Pipe Rückwärts:[/b][br]Dieses Feld teilt der  angeschlossenen Pipe mit, ob Mario seinen Weg in umgekehrter Richtung (rückwärts) gehen soll oder nicht.</string>
+		<string id="16">Pfad ID:</string>
+		<string id="17">[b]Pfad ID:[/b][br]Verwende diese Option, um die Pfadnummer festzulegen, der die angeschlossene Pipe folgen soll.</string>
+		<string id="18">Verbindung zu Pipe die auf Bildschirm gerichtet ist</string>
+		<string id="19">[b]Verbindung zu Pipe die auf Bildschirm gerichtet ist:[/b][br]Wenn diese Option bei einer Pipe gesetzt ist, werden die Werte für den Zieleingang bzw. -bereich ignoriert - Mario wird durch die Röhre hindurchgehen und dann einige Tiles weiter wieder auftauchen, um aus einer nach vorne gerichteten Röhre zu kommen.</string>
+		<string id="20">Layer (Ebene):</string>
+		<stringlist id="21">
+			<entry>Layer 1</entry>
+			<entry>Layer 2</entry>
+			<entry>Layer 0</entry>
+		</stringlist>
+		<string id="22">[b]Layer (Ebene):[/b][br]Ermöglicht es, die Kollisionsebene zu ändern, auf der dieser Eingang aktiv ist. Diese Option ist sehr fehlerhaft und wird in den Standard-Levels nicht verwendet - für fast alle normalen Fälle sollte Layer 1 verwendet werden.</string>
+		<string id="23">[b]Eingang [id]:[/b]</string>
+		<string id="24">Eigenschaften des Eingangs ändern</string>
+		<string id="25">CP Ziel Richtung:</string>
+		<string id="26">[b]CP Ziel Richtung:[/b][br]Stellt die Richtung des Spielers ein, wie er aus der verbundenen Pipe kommen soll</string>
+		<stringlist id="27">
+			<entry>Aufwärts</entry>
+			<entry>Abwärts</entry>
+			<entry>Nach links</entry>
+			<entry>Nach rechts</entry>
+		</stringlist>
+		<string id="28">([id]) [name]</string>
+		<string id="29">Spieler zur Weltkarte senden</string>
+		<string id="30">[b]Spieler zur Weltkarte senden:[/b][br]Wenn diese Option aktiviert ist, wird der Spieler beim Betreten dieses Eingangs auf die Weltkarte geschickt.</string>
+		<string id="31">Spawne ein halbes Tile nach links</string>
+		<string id="32">[b]Spawne ein halbes Tile nach links:[/b][br]Wenn diese Option aktiviert ist, erscheint der Eingang eine halbe Tile weiter links als Mario.</string>
+	</section>
+	<section id="Entrances">
+		<string id="0">[b]Eingang [ent]:[/b][br]Typ: [type][br][i][dest][/i]</string>
+		<string id="1">Unbekannt</string>
+		<string id="2">(kann nicht betreten werden)</string>
+		<string id="3">(erreicht den Eingang [id] in dieser Area)</string>
+		<string id="4">(erreicht den Eingang [id] in Area [area])</string>
+		<string id="5">[id]: [name] (kann nicht betreten werden) bei Pos: [x], [y]</string>
+		<string id="6">[id]: [name] (betretbar) bei Pos: [x], [y]</string>
+		<string id="7">(geht zur Weltkarte)</string>
+	</section>
+	<section id="Err_BrokenSpriteData">
+		<string id="0">Warnung</string>
+		<string id="1">Die Sprite-Datei wurde nicht korrekt geladen. Die folgenden Sprites enthalten falsche und/oder fehlerhafte Daten und können im Editor möglicherweise nicht korrekt bearbeitet werden: [sprites]</string>
+		<string id="2">Fehler</string>
+	</section>
+	<section id="Err_CantFindLevel">
+		<string id="0">Konnte folgende Datei nicht finden:[br][name]</string>
+	</section>
+	<section id="Err_CorruptedTileset">
+		<string id="0">Fehler</string>
+		<string id="1">Beim Laden von [Datei] ist ein Fehler aufgetreten. Überprüfe deinen Texturordner um sicherzustellen, dass er vollständig und nicht beschädigt ist. Der Editor kann in einem fehlerhaften Zustand ausgeführt werden oder abstürzen, wenn dies geschieht.</string>
+	</section>
+	<section id="Err_CorruptedTilesetData">
+		<string id="0">Fehler</string>
+		<string id="1">Die erforderliche Textur kann in der Tileset-Datei [file] nicht gefunden werden und wird daher nicht geladen. Denke daran, dass die Tileset-Datei nicht umbenannt werden kann, ohne die Namen der Textur-/Objektdateien im Archiv ebenfalls zu ändern!</string>
+		<string id="2">Fehler beim Entpacken der Tileset-Datei [file]!</string>
+	</section>
+	<section id="Err_Decompress">
+		<string id="0">Fehler</string>
+		<string id="1">Konnte die LH-komprimierte Datei [file] nicht entpacken.</string>
+		<string id="2">Konnte die LZ-komprimierte Datei [file] nicht entpacken.</string>
+	</section>
+	<section id="Err_InvalidLevel">
+		<string id="0">Diese Datei scheint kein gültiges Level zu sein.</string>
+	</section>
+	<section id="Err_MissingFiles">
+		<string id="0">Fehler</string>
+		<string id="1">Es tut uns leid, du scheinst die erforderlichen Dateien für Reggie Next nicht zu haben. Bitte lade dir eine Kopie des Editors erneut herunter.</string>
+		<string id="2">Es tut uns leid, du scheinst die erforderlichen Dateien für Reggie Next nicht zu haben. Bitte lade dir eine Kopie des Editors erneut herunter. Die folgenden Dateien fehlen: [files]</string>
+	</section>
+	<section id="Err_MissingTileset">
+		<string id="0">Fehler</string>
+		<string id="1">Kann die erforderlich Tileset-Datei [file] nicht finden. Überprüfe den Stage-Ordner und stelle sicher, dass sie vorhanden ist.</string>
+	</section>
+	<section id="Err_Save">
+		<string id="0">Fehler</string>
+		<string id="1">Fehler beim Versuch, das Level zu speichern:[br](#[err1]) [err2][br][br](Dein Level wurde noch nicht abgespeichert! Versuche es mit einem anderen Dateinamen nochmal, oder navigiere zu einem anderen Ordner.)</string>
+		<string id="2">Fehler beim Versuch, das Level zu speichern:[br]Die Level-Daten ([orig-len] bytes) überschreiten die fixierte Level-Größe ([pad-len] bytes).[br][br](Dein Level wurde noch nicht abgespeichert! Erhöhe den Wert für fixierte Level-Größen im Einstellungen-Dialog.)</string>
+		<string id="3">Fehler beim Versuch, das Level zu speichern:[br]Beim Komprimieren des Levels ist ein Fehler aufgetreten. Ist es zu groß? Die unkomprimierte Größe beträgt [file-size] Bytes.[br][br](Dein Level wurde nicht gespeichert! Versuche, ohne Komprimierung zu speichern oder entferne Elemente aus deinem Level.)</string>
+	</section>
+	<section id="FileDlgs">
+		<string id="0">Wähle ein Level Archiv</string>
+		<string id="1">Level Archiv</string>
+		<string id="2">Alle Dateien</string>
+		<string id="3">Speichern Als: Wähle neuen Dateinamen</string>
+		<string id="4">Portable Network Graphics</string>
+		<string id="5">LH-komprimiertes Level Archiv</string>
+		<string id="6">Wähle ein Briefmarken Archiv</string>
+		<string id="7">Briefmarken Datei</string>
+		<string id="8">Speichere eine Kopie: Wähle neuen Dateinamen</string>
+		<string id="9">Alle unterstützten Level Archive</string>
+		<string id="10">LZ-komprimiertes Level Archiv</string>
+	</section>
+	<section id="Gamedefs">
+		<string id="0">Dieses Game hat selbsterstellte Grafiken für Sprites</string>
+		<string id="1">Lade Patch...</string>
+		<string id="2">Neuer Game Patch</string>
+		<string id="3">Es scheint, dass du den Game-Patch für [game] zum ersten Mal verwendest. Bitte wähle den Stage-Ordner, damit benutzerdefinierte Tilesets und Levels geladen werden können.</string>
+		<string id="4">Game-Pfad Auswahl abgebrochen!</string>
+		<string id="5">Da du den Stage-Ordner für [game] nicht ausgewählt hast, werden die Levels und Tilesets nicht korrekt geladen. Du kannst es erneut versuchen, indem du Game-Pfad ändern wählst, während der [game]-Patch geladen ist.</string>
+		<string id="6">Neuer Game Patch</string>
+		<string id="7">Du kannst den Game-Pfad für [game] jederzeit ändern, indem du Game-Pfad ändern wählst, während der [game]-Patch geladen ist.</string>
+		<string id="8">Lade Sprite-Daten...</string>
+		<string id="9">Lade Namen für Hintergründe...</string>
+		<string id="10">Tilesets neu laden...</string>
+		<string id="11">Lade Sprite-Bilder Daten...</string>
+		<string id="12">Wende Sprite-Bilder Daten an...</string>
+		<string id="13">New Super Mario Bros. Wii</string>
+		<string id="14">A new Mario adventure![br]Published by Nintendo in November 2009.</string>
+		<string id="15">[i]Keine Beschreibung[/i]</string>
+		<string id="16">Lade Eingang Namen...</string>
+		<string id="17">Fehler</string>
+		<string id="18">Beim Versuch, diesen Game-Patch zu laden, ist ein Fehler aufgetreten. Das Laden des Game-Patches wird jetzt rückgängig gemacht. Hier ist der spezifische Fehler:[br][error]</string>
+		<string id="19">Einen Game Patch Ordner hinzufügen...</string>
+		<string id="20">Erzeugt einen Symlink im Ordner /reggiedata/patches mit add_reggie_patch</string>
+	</section>
+	<section id="InfoDlg">
+		<string id="0">Level Informationen</string>
+		<string id="1">Passwort hinzufügen/ändern</string>
+		<string id="2">Die Informationen dieses Levels sind gesperrt.[br]Bitte gib das Passwort unten ein, um sie zu ändern.</string>
+		<string id="3">Passwort:</string>
+		<string id="4">Titel:</string>
+		<string id="5">Autor:</string>
+		<string id="6">Gruppe:</string>
+		<string id="7">Website:</string>
+		<string id="8">Erstellt mit [name]</string>
+		<string id="9">Password ändern</string>
+		<string id="10">Neues Passwort:</string>
+		<string id="11">Password bestätigen:</string>
+		<string id="12">Level Informationen</string>
+		<string id="13">Das Passwort kann aus allen ASCII-Zeichen bestehen und bis zu 64 Zeichen lang sein.[br]</string>
+		<string id="14">Sorry![br][br]Du kannst die Level-Informationen nur in Area 1 anzeigen oder bearbeiten.</string>
+	</section>
+	<section id="LocationDataEditor">
+		<string id="0">ID:</string>
+		<string id="1">[b]ID:[/b][br]Muss sich von allen anderen IDs unterscheiden</string>
+		<string id="2">X Position:</string>
+		<string id="3">[b]X Position:[/b][br]Spezifiziert die X-Position der Location</string>
+		<string id="4">Y Position:</string>
+		<string id="5">[b]Y Position:[/b][br]Spezifiziert die Y-Position der Location</string>
+		<string id="6">Breite:</string>
+		<string id="7">[b]Breite:[/b][br]Spezifiziert die Breite der Location</string>
+		<string id="8">Höhe:</string>
+		<string id="9">[b]Höhe:[/b][br]Spezifiziert die Höhe der Location</string>
+		<string id="10">Am Gitter ausrichten</string>
+		<string id="11">[b]Location [id]:[/b]</string>
+		<string id="12">Einstellungen der Location bearbeiten</string>
+	</section>
+	<section id="Locations">
+		<string id="0">[id]</string>
+		<string id="1" />
+		<string id="2">[id]: [width]x[height] bei Pos: [x], [y]</string>
+	</section>
+	<section id="MainWindow">
+		<string id="0">[ungespeichert]</string>
+		<string id="1">Du versuchst, mehr als 300 Elemente auf einmal einzufügen. Das kann eine Weile dauern (abhängig von der Geschwindigkeit deines Computers).[br][br]Bist du sicher, dass du fortfahren willst?</string>
+	</section>
+	<section id="Menubar">
+		<string id="0">&amp;Datei</string>
+		<string id="1">&amp;Bearbeiten</string>
+		<string id="2">&amp;Ansicht</string>
+		<string id="3">&amp;Einstellungen</string>
+		<string id="4">&amp;Hilfe</string>
+		<string id="5">Editor Toolbar</string>
+	</section>
+	<section id="MenuItems">
+		<string id="0">Neues Level</string>
+		<string id="1">Erstelle ein neues, leeres Level</string>
+		<string id="2">Öffne Level nach Namen...</string>
+		<string id="3">Öffne ein Levels basierend auf seiner Spielwelt/Nummer</string>
+		<string id="4">Öffne Level nach Datei...</string>
+		<string id="5">Öffne ein Level basierend auf seinem Dateinamen</string>
+		<string id="6">Letzte Dateien</string>
+		<string id="7">Öffne ein Levels aus einer Liste der zuletzt geöffneten Levels</string>
+		<string id="8">Speichere Level</string>
+		<string id="9">Speichere das Level in ein Level Archiv</string>
+		<string id="10">Speichere Level als...</string>
+		<string id="11">Speichere das Level unter einem neuen Dateinamen</string>
+		<string id="12">Level Informationen...</string>
+		<string id="13">Hinzufügen von Titel- und Autoreninformationen zu den Metadaten des Levels</string>
+		<string id="14">Level Screenshot...</string>
+		<string id="15">Mache einen Screenshot deines Levels in voller Größe, den du weitergeben kannst.</string>
+		<string id="16">Ändere den Game Pfad...</string>
+		<string id="17">Lege einen anderen Ordner fest, aus dem die Spieldateien geladen werden sollen</string>
+		<string id="18">Reggie Next: Allgemeine Einstellungen...</string>
+		<string id="19">Ändere wichtige Reggie Next Einstellungen</string>
+		<string id="20">Reggie Next beenden</string>
+		<string id="21">Beende den Editor</string>
+		<string id="22">Alles auswählen</string>
+		<string id="23">Alle Items in der Area auswählen</string>
+		<string id="24">Abwählen</string>
+		<string id="25">Alle aktuell ausgewählten Items abwählen</string>
+		<string id="26">Ausschneiden</string>
+		<string id="27">Ausschneiden der aktuellen Auswahl in die Zwischenablage</string>
+		<string id="28">Kopieren</string>
+		<string id="29">Kopieren der aktuellen Auswahl in die Zwischenablage</string>
+		<string id="30">Einfügen</string>
+		<string id="31">Einfügen von Elementen aus der Zwischenablage</string>
+		<string id="32">Items verschieben...</string>
+		<string id="33">Alle ausgewählten Elemente um einen Versatz (Offset) verschieben</string>
+		<string id="34">Locations zusammenführen</string>
+		<string id="35">Zusammenführen ausgewählter Locations zu einer einzigen großen Location</string>
+		<string id="36">Level Diagnose Tool...</string>
+		<string id="37">Finde und behebe Probleme mit dem Level</string>
+		<string id="38">Objekte einfrieren</string>
+		<string id="39">Objekte nicht auswählbar machen</string>
+		<string id="40">Sprites einfrieren</string>
+		<string id="41">Sprites nicht auswählbar machen</string>
+		<string id="42">Eingänge einfrieren</string>
+		<string id="43">Eingänge nicht auswählbar machen</string>
+		<string id="44">Locations einfrieren</string>
+		<string id="45">Locations nicht auswählbar machen</string>
+		<string id="46">Pfade einfrieren</string>
+		<string id="47">Pfade nicht auswählbar machen</string>
+		<string id="48">Layer 0</string>
+		<string id="49">Umschalten der Anzeige der Objektebene 0</string>
+		<string id="50">Layer 1</string>
+		<string id="51">Umschalten der Anzeige der Objektebene 1</string>
+		<string id="52">Layer 2</string>
+		<string id="53">Umschalten der Anzeige der Objektebene 2</string>
+		<string id="54">Sprites anzeigen</string>
+		<string id="55">Umschalten der Anzeige von Sprites</string>
+		<string id="56">Sprite-Bilder anzeigen</string>
+		<string id="57">Umschalten der Anzeige von Sprite-Bildern</string>
+		<string id="58">Locations anzeigen</string>
+		<string id="59">Umschalten der Anzeige von Locations</string>
+		<string id="60">Grid-Darstellung ändern</string>
+		<string id="61">Durch die verschiedenen Grid-Darstellungen wechseln</string>
+		<string id="62">Zoomen auf Maximum</string>
+		<string id="63">So weit hereinzoomen wie möglich</string>
+		<string id="64">Reinzoomen</string>
+		<string id="65">In das Level hineinzoomen</string>
+		<string id="66">Zoomen auf 100%</string>
+		<string id="67">Das Level mit dem ursprünglichen Zoom-Wert anzeigen</string>
+		<string id="68">Rauszoomen</string>
+		<string id="69">Aus dem Level herauszoomen</string>
+		<string id="70">Zoomen auf Minimum</string>
+		<string id="71">So weit herauszoomen wie möglich</string>
+		<string id="72">Area-Einstellungen...</string>
+		<string id="73">Ändere die geladenen Tilesets, stelle den Timer ein, oder konfiguriere den Level-Eingang, sowie Stage Wrap und andere Einstellungen</string>
+		<string id="74">Zonen-Einstellungen...</string>
+		<string id="75">Erstellen und Löschen von Zonen und Bearbeiten von Präferenzen</string>
+		<string id="76">Hintergründe...</string>
+		<string id="77">Anwendung von Hintergründen auf einzelne Zonen in der aktuellen Area</string>
+		<string id="78">Neue Area hinzufügen</string>
+		<string id="79">Eine neue Area (Unterebene) zu diesem Level hinzufügen</string>
+		<string id="80">Importiere Area aus Datei...</string>
+		<string id="81">Importiert eine Area (Unterebene) aus einer anderen Level-Datei</string>
+		<string id="82">Lösche aktuelle Area...</string>
+		<string id="83">Die aktuell geöffnete Area (Unterebene) aus dem Level löschen</string>
+		<string id="84">Tilesets neu laden</string>
+		<string id="85">Lade die Tileset-Dateien neu, einschließlich aller Änderungen, die seit dem Laden des Levels vorgenommen wurden.</string>
+		<string id="86">Über Reggie Next...</string>
+		<string id="87">Informationen über das Programm und das Team dahinter</string>
+		<string id="88">Hilfebereich...</string>
+		<string id="89">Hilfsdokumentation für den bedürftigen Neuling</string>
+		<string id="90">Reggie Next Tips...</string>
+		<string id="91">Tipps und Kontrollen für Anfänger und Power-User</string>
+		<string id="92">Über PyQt...</string>
+		<string id="93">Über die Qt Library, auf der Reggie Next basiert</string>
+		<string id="94">Level Übersicht</string>
+		<string id="95">Zeige oder verberge das Level Übersicht Fenster</string>
+		<string id="96">Palette</string>
+		<string id="97">Zeige oder verberge die Palette</string>
+		<string id="98">Lade anderen Game Patch</string>
+		<string id="99">Wechsle den aktuell geladenen Reggie Patch</string>
+		<string id="100" />
+		<string id="101" />
+		<string id="102" />
+		<string id="103" />
+		<string id="104">Tausche das Tileset des Objekts...</string>
+		<string id="105">Tauscht das Tileset des Objekts mit einem anderen aus</string>
+		<string id="106">Tausche Objekte...</string>
+		<string id="107">Vertauscht den Typ von Objekten eines bestimmten Typs</string>
+		<string id="108">Tileset Animationen</string>
+		<string id="109">Tileset-Animationen abspielen, wenn sie vorhanden sind (kann zu einer Verlangsamung führen)</string>
+		<string id="110">Tileset Kollision</string>
+		<string id="111">Ansicht von Tileset-Kollision für vorhandene Objekte</string>
+		<string id="112">Öffne Level...</string>
+		<string id="113" /> <!-- This keeps the even-odd pattern going, since 112 uses description 3 -->
+		<string id="114">Kommentare einfrieren</string>
+		<string id="115">Kommentare nicht auswählbar machen</string>
+		<string id="116">Kommentare anzeigen</string>
+		<string id="117">Umschalten der Anzeige von Kommentaren</string>
+		<string id="118">Real View</string>
+		<string id="119">Spezialeffekte im Level anzeigen, auch Flüssigkeiten, Wolken etc</string>
+		<string id="120" />
+		<string id="121" />
+		<string id="124">Rückgängig machen</string>
+		<string id="125">Macht die letzte Aktion rückgängig</string>
+		<string id="126">Wiederherstellen</string>
+		<string id="127">Wiederholt die letzte Aktion, die rückgängig gemacht wurde</string>
+		<string id="128">Eine Kopie des Levels speichern als...</string>
+		<string id="129">Speichern einer Kopie des Levels unter einem neuen Dateinamen, wobei die aktuelle Datei zur Bearbeitung geöffnet bleibt</string>
+		<string id="130">Pfade anzeigen</string>
+		<string id="131">Umschalten der Anzeige von Pfaden</string>
+		<string id="136">Quick Paint Einstellungen</string>
+		<string id="137">Anzeigen der Einstellungen zum Konfigurieren von Quick Paint</string>
+		<string id="138">Spritedata neu laden</string>
+		<string id="139">Lade die Spritedaten-Datei neu, einschließlich aller Änderungen, die seit dem Laden des Levels vorgenommen wurden.</string>
+		<string id="140">Kamera Profile...</string>
+		<string id="141">Bearbeiten von Event-aktivierten Kameraeinstellungen</string>
+	</section>
+	<section id="Objects">
+		<string id="0">[b]Tileset [tileset], Objekt [obj]:[/b][br][width]x[height] auf Layer [layer]</string>
+		<string id="1">Objekt [id]</string>
+		<string id="2">Objekt [id][br][i]Dieses Objekt ist animiert[/i]</string>
+		<string id="3">[b]Objekt [id]:[/b][br][desc]</string>
+		<string id="4">[b]Objekt [id]:[/b][br][desc][br][i]Dieses Objekt ist animiert[/i]</string>
+	</section>
+	<section id="OpenFromNameDlg">
+		<string id="0">Wähle Level</string>
+	</section>
+	<section id="Palette">
+		<string id="0">Zeichnen auf Layer:</string>
+		<string id="1">[b]Layer 0:[/b][br]Dieses Layer wird hauptsächlich für versteckte Höhlen verwendet, kann aber auch zum Überlagern von Tiles benutzt werden, um Effekte zu erzeugen. Der Taschenlampeneffekt tritt auf, wenn Mario hinter einer Tile auf Layer 0 steht und der Effekt in der Zone aktiviert ist.[br][b]Hinweis:[/b] Um Objekte auf anderen Layern zu diesem Layer zu wechseln, wähle die Tiles aus die gewechselt werden sollen, und klicke dann auf diese Schaltfläche, während die [i]Alt[/i]-Taste gedrückt ist.</string>
+		<string id="2">[b]Layer 1:[/b][br]Alle oder die meisten normalen Levelobjekte sollten auf diesem Layer platziert werden. Dies ist der einzige Layer, auf der Tileset-Interaktionen (Blöcke mit Kollision, Neigungen usw.) funktionieren.[br][b]Hinweis:[/b] Um Objekte auf anderen Layern zu diesem Layer zu wechseln, wähle die Tiles aus die gewechselt werden sollen, und klicke dann auf diese Schaltfläche, während die [i]Alt[/i]-Taste gedrückt ist.</string>
+		<string id="3">[b]Layer 2:[/b][br]Hintergrund-Tiles oder Wand-Tiles (wie die in den versteckten Höhlen) sollten auf diesem Layer platziert werden. Tiles auf Layer 2 haben keinen Einfluss auf die Kollision.[br][b]Hinweis:[/b] Um Objekte auf anderen Layern zu diesem Layer zu wechseln, wähle die Tiles aus die gewechselt werden sollen, und klicke dann auf diese Schaltfläche, während die [i]Alt[/i]-Taste gedrückt ist.</string>
+		<string id="4">Ansicht:</string>
+		<string id="5">Suche:</string>
+		<string id="6">Standard-Eigenschaften festlegen</string>
+		<string id="7">Standard-Eigenschaften</string>
+		<string id="8">Eingänge, die sich derzeit in dieser Area befinden:[br](Doppelklicke auf einen, um sofort dorthin zu gelangen)</string>
+		<string id="9">Pfad-Knoten(punkte), die sich derzeit in dieser Area befinden:[br](Doppelklicke auf einen, um sofort dorthin zu gelangen)[br]Um einen Pfad zu löschen, entferne nacheinander alle Knoten. Um neue Pfade hinzuzufügen, klicke auf die Schaltfläche unten und dann mit der rechten Maustaste in den Kanvas.</string>
+		<string id="10">Auswahl aufheben (dann Rechtsklick für neuen Pfad)</string>
+		<string id="11">Sprites, die sich derzeit in dieser Area befinden:[br](Doppelklick auf eines, um sofort dorthin zu springen)</string>
+		<string id="12">Locations, die sich derzeit in dieser Area befinden:[br](Doppelklick auf eines, um sofort dorthin zu springen)</string>
+		<string id="13">Objekte</string>
+		<string id="14">Sprites</string>
+		<string id="15">Eingänge</string>
+		<string id="16">Locations</string>
+		<string id="17">Pfade</string>
+		<string id="18">Events</string>
+		<string id="19">Briefmarken</string>
+		<string id="20">Event-States beim Start des Levels:[br](Klicke auf eines, um eine Notiz hinzuzufügen)</string>
+		<string id="21">Notiz:</string>
+		<string id="22">Status</string>
+		<string id="23">Notiz</string>
+		<string id="24">Event [id]</string>
+		<string id="25">Hinzufügen</string>
+		<string id="26">Aktuelle</string>
+		<string id="27">Verfügbare Briefmarken:</string>
+		<string id="28">Hinzufügen</string>
+		<string id="29">Entfernen</string>
+		<string id="30">Tools</string>
+		<string id="31">Öffne Set...</string>
+		<string id="32">Speichere Set Als...</string>
+		<string id="33">Kommentare</string>
+		<string id="34">Aktuelle Kommentare in dieser Area:[br](Doppelklicke auf einen Kommentar, um ihn sofort aufzurufen)</string>
+		<string id="35">Name:</string>
+		<string id="36">Ändere den Layer</string>
+	</section>
+	<section id="PathDataEditor">
+		<string id="0">Loops:</string>
+		<string id="1">[b]Loops:[/b][br]Alles, was diesem Pfad folgt, wartet die am letzten Knotenpunkt eingestellte Verzögerung ab und kehrt dann in gerader Linie zum ersten Knotenpunkt zurück und fährt fort.</string>
+		<string id="2">Geschwindigkeit:</string>
+		<string id="3">[b]Geschwindigkeit:[/b][br]Pixels pro Frame!</string>
+		<string id="4">Beschleunigung:</string>
+		<string id="5">[b]Beschleunigung:[/b][br]Delta (Veränderung) an Pixels pro Frame!</string>
+		<string id="6">Verzögerung:</string>
+		<string id="7">[b]Verzögerung:[/b][br]Zeit, die hier (an diesem Knoten) angehalten wird, bevor zum nächsten Knoten weitergefahren wird. Die Einheit ist 1/60 einer Sekunde (60 für 1 Sekunde)</string>
+		<string id="8">[b]Pfad [id][/b]</string>
+		<string id="9">[b]Knoten [id][/b]</string>
+		<string id="10">Ändern der Eigenschaften des ausgewählten Pfadknotens</string>
+		<string id="11">ID</string>
+	</section>
+	<section id="Paths">
+		<string id="0">[b]Pfad [path][/b][br]Knoten [node]</string>
+		<string id="1">Pfad [path], Knoten [node]</string>
+	</section>
+	<section id="PrefsDlg">
+		<string id="0">Reggie Next Einstellungen</string>
+		<string id="1">Allgemein</string>
+		<string id="2">Toolbar</string>
+		<string id="3">Themen</string>
+		<string id="4">[b]Reggie Einstellungen[/b][br]Passe Reggie Next an, indem du diese Einstellungen änderst.[br]Benutze die Registerkarten unten, um noch mehr Einstellungen zu sehen.[br]Reggie Next muss neu gestartet werden, bevor bestimmte Änderungen wirksam werden können.</string>
+		<string id="5">[b]Toolbar Einstellungen[/b][br]Wähle die Menüpunkte, die in der Symbolleiste erscheinen sollen.[br]Reggie Next muss neu gestartet werden, bevor die Symbolleiste aktualisiert werden kann.[br]</string>
+		<string id="6">[b]Reggie Themen[/b][br]Wähle unten ein Thema, um die Farben und Symbole der Anwendung zu ändern.[br]Reggie Next muss neu gestartet werden, bevor das Thema geändert werden kann.</string>
+		<string id="7" />
+		<string id="8" />
+		<string id="9" />
+		<string id="10" />
+		<string id="11">Menu format?????:</string>
+		<string id="12" />
+		<string id="13">Benutze die Menübar</string>
+		<string id="14">Sprache:</string>
+		<string id="15">Letzte Dateien Liste:</string>
+		<string id="16">Alle löschen</string>
+		<string id="17">Leere die Liste der zuletzt benutzten Dateien</string>
+		<string id="18">Bist du sicher, dass du die Liste der zuletzt benutzten Dateien löschen willst?[br][b]Dies kann nicht rückgängig gemacht werden![/b]</string>
+		<string id="19">Aktuelle Area</string>
+		<string id="20">Zurücksetzen</string>
+		<string id="21">Verfügbare Themen</string>
+		<string id="22">Vorschau</string>
+		<string id="23" />
+		<string id="24">[b]Fenster Style[/b][br]Dies ändert den Stil, den Reggie's UI verwendet. Beachte, dass manche Themen bestimmte Stile benötigen, sonst kann es zu Problemen führen.</string>
+		<string id="25">Optionen (Fenster Style)</string>
+		<string id="26">[b][name][/b][br]Von [creator][br][description]</string>
+		<string id="27" />
+		<string id="28" />
+		<string id="29" />
+		<string id="30">Möglicherweise musst du Reggie Next neu starten, damit die Änderungen wirksam werden.</string>
+		<string id="31">Blende eine senkrechte Linie ein: Rechts von der Linie können Eingänge sicher in Zonen platziert werden</string>
+		<string id="32" />
+		<string id="33">Sprite-Daten beim Ausblenden von Sprite-Feldern zurücksetzen</string>
+		<string id="34">Zurücksetzen-Button (für Spritedata) ausblenden</string>
+		<string id="35">Padde das Level mit leeren Bytes</string>
+		<string id="36">Fixierte Levelgröße (Bytes)</string>
+		<string id="37">Objekte zuerst in ihrer vollen Größe platzieren</string>
+		<string id="38">Anzeigen der Rechtecke, die die Zonen-Bounds darstellen</string>
+		<string id="39">Option zum Einfügen eines neuen Knoten nach dem aktuellen Knoten</string>
+		<string id="40">Themen (Allgemeiner Style)</string>
+		<string id="41">Style:</string>
+	</section>
+	<section id="ScrShtDlg">
+		<string id="0">Wähle Screenshot Quelle</string>
+		<string id="1">Aktueller Bildschirm</string>
+		<string id="2">Alle Zonen</string>
+		<string id="3">Zone [zone]</string>
+		<string id="4">Ziel</string>
+		<string id="5">Hintergrund verbergen</string>
+		<string id="6">Speichere Bild in Datei</string>
+		<string id="7">Kopiere Bild in Zwischenablage</string>
+	</section>
+	<section id="ShftItmDlg">
+		<string id="0">Items verschieben</string>
+		<string id="1">Bewege Objekte bei:</string>
+		<string id="2">Gebe einen Wert in Pixeln ein - jeder Block ist 16 Pixel breit/hoch. Beachte, dass Objekte nur auf 16x16-Grenzen platziert werden können. Wenn der eingegebene Offset also kein Vielfaches von 16 ist, werden sie nicht korrekt verschoben.</string>
+		<string id="3">X:</string>
+		<string id="4">Y:</string>
+		<string id="5">Warnung</string>
+		<string id="6">Du versuchst, Objekte um einen Wert zu verschieben, der kein Vielfaches von 16 ist. Der Wert wird auf das nächste Vielfache von 16 gerundet. Bist du sicher, dass du dies tun willst?</string>
+	</section>
+	<section id="SwapObjTilesDlg">
+		<string id="0">Tausche das Tileset von Objekten</string>
+		<string id="1">Von Tileset:</string>
+		<string id="2">Zu Tileset:</string>
+		<string id="3">Austausch (führe 2-Wege Umwandlung durch)</string>
+	</section>
+	<section id="SwapObjDlg">
+		<string id="0">Tausche Objekte</string>
+		<string id="1">Von Objekt:</string>
+		<string id="2">Von Tileset:</string>
+		<string id="3">Zu Objekt:</string>
+		<string id="4">Zu Tileset:</string>
+		<string id="5">Austausch (führe 2-Wege Umwandlung durch)</string>
+	</section>
+	<section id="SpriteDataEditor">
+		<string id="0">Ändere Eigenschaften des ausgewählten Sprites</string>
+		<string id="1">[b][name][/b]: [note]</string>
+		<string id="2">[b]Sprite Info:[/b] [notes]</string>
+		<string id="3">RAW Daten bearbeiten:</string>
+		<string id="4">Info</string>
+		<string id="5">[b]Nicht identifiziertes/unbekanntes Sprite ([id])[/b]</string>
+		<string id="6">[b]Sprite [id]:[br][name][/b]</string>
+		<string id="7">Objekt Dateien</string>
+		<string id="8">[b]Dieses Sprite benutzt:[/b][br][list]</string>
+		<string id="9">[b]Yoshi Info:[/b] [notes]</string>
+		<string id="10">Erweiterte Info</string>
+		<string id="11">[b]Erweiterte Info:[/b] [notes]</string>
+		<string id="12">Yoshi</string>
+		<string id="13">Weiterlesen...</string>
+		<string id="14">Einklappen...</string>
+		<string id="15">Dieses Sprite funktioniert ausgezeichnet mit Yoshi.</string>
+		<string id="16" />
+		<string id="17">Alle Einstellungen zurücksetzen</string>
+		<string id="18">Abhängige Sprites überprüfen</string>
+		<string id="19">Zeige Info über abhängige Sprites</string>
+		<string id="20">Sprite [id]: benötigt in der Area</string>
+		<string id="21">Sprite [id]: vorgeschlagen in der Area</string>
+		<string id="22">Sprite [id]: benötigt in der Zone</string>
+		<string id="23">Sprite [id]: vorgeschlagen in der Zone</string>
+		<string id="24" />
+		<string id="25">Dieses Sprite hat die folgenden Abhängigkeiten:</string>
+	</section>
+	<section id="Sprites">
+		<string id="0">[b]Sprite [type]:[/b][br][name]</string>
+		<string id="1">[name] (bei Pos: [x], [y]</string>
+		<string id="2">, ausgelöst durch Event [event]</string>
+		<string id="3">, ausgelöst durch Events [event1]+[event2]+[event3]+[event4]</string>
+		<string id="4">, ausgelöst durch Event [event1], [event2], [event3], oder [event4]</string>
+		<string id="5">, aktiviert Event [event]</string>
+		<string id="6">, aktiviert Events [event1] - [event2]</string>
+		<string id="7">, aktiviert Event [event1], [event2], [event3], oder [event4]</string>
+		<string id="8">, Star Coin [num]</string>
+		<string id="9">, Star Coin 1</string>
+		<string id="10">, Coin/Set ID [id]</string>
+		<string id="11">, Bewegung/Coin ID [id]</string>
+		<string id="12">, Bewegungs-ID [id]</string>
+		<string id="13">, Rotation ID [id]</string>
+		<string id="14">, Location ID [id]</string>
+		<string id="15">)</string>
+		<string id="16">Suchresultate</string>
+		<string id="17">Keine Sprites gefunden</string>
+		<string id="18">[id]: [name]</string>
+		<string id="19">Suche</string>
+		<string id="20">Filter</string>
+		<string id="21">ID</string>
+		<string id="22">Name</string>
+		<stringlist id="23">
+			<entry>Egal/Jede ID</entry>
+			<entry>Star Set ID</entry>
+			<entry>Rotation ID</entry>
+			<entry>Two Way Line ID</entry>
+			<entry>Water Ball ID</entry>
+			<entry>Mushroom ID</entry>
+			<entry>Group ID</entry>
+			<entry>Bolt ID</entry>
+			<entry>Ziel Event ID</entry>
+			<entry>Ausgelöste Event ID</entry>
+			<entry>Sammlungs-ID</entry>
+			<entry>Location ID</entry>
+			<entry>Physics ID</entry>
+			<entry>Nachricht ID</entry>
+			<entry>Pfad ID</entry>
+			<entry>Pfad Bewegungskontroller ID</entry>
+			<entry>Red Coin ID</entry>
+			<entry>Hill ID</entry>
+			<entry>Stretch ID</entry>
+			<entry>Ray ID</entry>
+			<entry>Coaster ID</entry>
+			<entry>Bubble Cannon ID</entry>
+			<entry>Burner ID</entry>
+			<entry>Wiggling ID</entry>
+			<entry>Panel ID</entry>
+			<entry>Colony ID</entry>
+			<entry>Eingang ID</entry>
+			<entry>Pfad-Knoten ID</entry>
+		</stringlist>
+	</section>
+	<section id="Statusbar">
+		<string id="0">- 1 Objekt ausgewählt</string>
+		<string id="1">- 1 Sprite ausgewählt</string>
+		<string id="2">- 1 Eingang ausgewählt</string>
+		<string id="3">- 1 Location ausgewählt</string>
+		<string id="4">- 1 Pfad-Knoten ausgewählt</string>
+		<string id="5">- [x] Objekte ausgewählt</string>
+		<string id="6">- [x] Sprites ausgewählt</string>
+		<string id="7">- [x] Eingänge ausgewählt</string>
+		<string id="8">- [x] Locations ausgewählt</string>
+		<string id="9">- [x] Pfad-Knoten ausgewählt</string>
+		<string id="10">- [x] Items ausgewählt (</string>
+		<string id="11">, </string>
+		<string id="12">1 Objekt</string>
+		<string id="13">[x] Objekte</string>
+		<string id="14">1 Sprite</string>
+		<string id="15">[x] Sprites</string>
+		<string id="16">1 Eingang</string>
+		<string id="17">[x] Eingänge</string>
+		<string id="18">1 Location</string>
+		<string id="19">[x] Locations</string>
+		<string id="20">1 Pfad-Knoten</string>
+		<string id="21">[x] Pfad-Knoten</string>
+		<string id="22">)</string>
+		<string id="23">- Objekt unter Maus: Größe [width]x[height] bei Pos: ([xpos], [ypos]) auf Layer [layer]; Typ [type] von Tileset [tileset]</string>
+		<string id="24">- Sprite unter Maus: [name] bei Pos: [xpos], [ypos]</string>
+		<string id="25">- Eingang unter Maus: [name] bei Pos: [xpos], [ypos] [dest]</string>
+		<string id="26">- Location unter Maus: Location ID [id] bei Pos: [xpos], [ypos]; Breite [width], Höhe [height]</string>
+		<string id="27">- Pfad-Knoten unter Maus: Pfad [path], Knoten [node] bei Pos: [xpos], [ypos]</string>
+		<string id="28">([objx], [objy]) - ([sprx], [spry])</string>
+		<string id="29">- 1 Kommentar-Box ausgewählt</string>
+		<string id="30">- [x] Kommentar-Box ausgewählt</string>
+		<string id="31">1 Kommentar-Box</string>
+		<string id="32">[x] Kommentar-Box</string>
+		<string id="33">- Kommentar-Box unter Maus: [xpos], [ypos]; "[text]"</string>
+	</section>
+	<section id="Themes">
+		<string id="0">Classic</string>
+		<string id="1">Treeki, Tempus</string>
+		<string id="2">The default Reggie Next theme.</string>
+		<string id="3">[i](unknown)[/i]</string>
+		<string id="4">[i]No description[/i]</string>
+	</section>
+	<section id="WindowTitle">
+		<string id="0">Unbenannt</string>
+	</section>
+	<section id="ZonesDlg">
+		<string id="0">Zonen</string>
+		<string id="1" /> <!-- Formerly a list of zone theme values. Moved to reggidata/zonethemes.txt -->
+		<stringlist id="2">
+			<entry>Normal/Overworld</entry>
+			<entry>Untergrund</entry>
+			<entry>Unterwasser</entry>
+			<entry>Lava</entry>
+		</stringlist>
+		<string id="3">Zone [num]</string>
+		<string id="4">Neu</string>
+		<string id="5">Löschen</string>
+		<string id="6">Warnung</string>
+		<string id="7">Du versuchst, mehr als 6 Zonen zu einem Level hinzuzufügen - bedenke, dass dies ohne den richtigen Fix für das Spiel dazu führen wird, dass dein Level [b]abstürzt[/b] oder andere seltsame Probleme hat!</string>
+		<string id="8">Position und Abmessung</string>
+		<string id="9">X Position:</string>
+		<string id="10">[b]X Position:[/b][br]Legt die X-Position der oberen linken Ecke fest</string>
+		<string id="11">Y Position:</string>
+		<string id="12">[b]Y Position:[/b][br]Legt die Y-Position der oberen linken Ecke fest</string>
+		<string id="13">Breite:</string>
+		<string id="14">[b]Breite:[/b][br]Stellt die Breite der Zone ein</string>
+		<string id="15">Höhe:</string>
+		<string id="16">[b]Höhe:[/b][br]Stellt die Höhe der Zone ein</string>
+		<string id="17">Voreinstellung:</string>
+		<string id="18">[b]Voreinstellung:[/b][br]Wähle vorbestimmte Abmessungen für die Zone aus.</string>
+		<string id="19">Rendering und Kamera</string>
+		<string id="20">Zonen-Thema:</string>
+		<string id="21">[b]Zonen-Thema:[/b][br]Ändert die Art und Weise, wie Modelle und Teile des Hintergrunds gerendert werden (für Unschärfe, Dunkelheit, Lavaeffekte usw.).[br]Bestimmte Zonenthemen können zusätzliche Auswirkungen haben. Wenn zum Beispiel „Geisterhaus“ ausgewählt ist, lachen Blöcke, aus denen Gegenstände herausspringen, wie ein Buh.[br][b]Hinweis:[/b] Einstellungen mit einem Sternchen sehen genauso aus wie „Overworld“.</string>
+		<string id="22">Terrain Beleuchtung:</string>
+		<string id="23">[b]Terrain Beleuchtung:[/b][br]Ändert die Art und Weise, wie das Terrain gerendert wird. Es wirkt sich auch auf die Teile des Hintergrunds aus, die mit dem normalen Thema nicht verändert werden.</string>
+		<string id="24">Normal</string>
+		<string id="25">[b]Sichtbarkeit - Normal:[/b][br]Stellt die Sichtbarkeit der Zone auf Normal.</string>
+		<string id="26">Layer 0 Scheinwerfer</string>
+		<string id="27">[b]Sichtbarkeit - Layer 0 Scheinwerfer:[/b][br]Stellt die Sichtbarkeit der Zone auf Scheinwerfer/Spotlight. Wenn du dich im Scheinwerfer-Modus hinter Layer 0 Objekten bewegst, wird ein Scheinwerfer um Mario herum aktiviert, der Layer 0 Objekte temporär durchsichtig macht.</string>
+		<string id="28">Komplette Dunkelheit</string>
+		<string id="29">[b]Sichtbarkeit - Komplette Dunkelheit:[/b][br]Stellt den Sichtbarkeitsmodus auf völlige Dunkelheit ein. Im vollständig dunklen Modus ist der Bildschirm komplett schwarz und die Sichtbarkeit wird nur durch den verfügbaren Scheinwerfer-Effekt gewährleistet. Sterne und einige Sprites können die Sichtbarkeit verbessern.</string>
+		<string id="30" />
+		<string id="31" />
+		<string id="32" />
+		<string id="33" />
+		<string id="34" />
+		<string id="35" />
+		<string id="36" />
+		<string id="37" />
+		<stringlist id="38">
+			<entry>Rechts</entry>
+			<entry>Rechts (Aufwärtsneigung)</entry>
+			<entry>Links</entry>
+			<entry>Links (Aufwärtsneigung)</entry>
+			<entry>Unten</entry>
+			<entry>Unten (Linksneigung)</entry>
+			<entry>Oben</entry>
+			<entry>Oben (Linksneigung)</entry>
+		</stringlist>
+		<string id="39">Zonen-Richtung:</string>
+		<string id="40">[b]Zonen-Richtung:[/b][br]Legt die allgemeine Richtung der Bewegung durch diese Zone fest. Dies wird hauptsächlich im Mehrspielermodus verwendet, um der Kamera zu helfen zu entscheiden, welcher Spieler „vor“ den anderen ist.[br][br]„Bias“ legt die bevorzugte Bewegungsrichtung der Kamera senkrecht zur Hauptrichtung fest. Die Standardeinstellung ist nach unten oder nach rechts gerichtet. Die Ausrichtung nach oben führt zu mehr Todesfällen am unteren Rand des Bildschirms und wird nicht empfohlen.</string>
+		<stringlist id="41">
+			<entry>Layer 0: Spieler dahinter versteckt</entry>
+			<entry>Layer 0: Spieler davor</entry>
+		</stringlist>
+		<string id="42">[b]Sichtbarkeit:[/b][br][b]Spieler versteckt:[/b]Mario wird ausgeblendet, wenn er sich hinter Objekten auf Ebene 0 bewegt.[br][b]Spieler davor:[/b] Mario wird immer über Ebene 0 angezeigt.[br][br][b]Hinweis:[/b] Andere Objekte als Mario, die sich hinter Ebene 0 befinden, sind nie sichtbar.</string>
+		<stringlist id="43">
+			<entry>Spotlight: Kleiner Scheinwerfer</entry>
+			<entry>Spotlight: Großer Scheinwerfer</entry>
+			<entry>Spotlight: Ganzer Bildschirm Scheinwerfer</entry>
+		</stringlist>
+		<string id="44">[b]Sichtbarkeit:[/b][br][b]Kleiner Scheinwerfer:[/b] Ein kleiner, zentrierter Scheinwerfer ermöglicht die Sichtbarkeit durch Layer 0.[br][b]Großer Scheinwerfer:[/b] Ein großer, zentrierter Scheinwerfer ermöglicht die Sichtbarkeit durch Layer 0.[br][b]Ganzer Bildschirm:[/b] Ein extrem großer, zentrierter Scheinwerfer, der den gesamten Bildschirm inklusive der größten Zoomstufe überdeckt, ermöglicht die Sichtbarkeit durch Layer 0.</string>
+		<stringlist id="45">
+			<entry>Dunkelheit: Großes Nebellicht (Fog Light)</entry>
+			<entry>Dunkelheit: Lichtstrahl (Lightbeam)</entry>
+			<entry>Dunkelheit: Großes Suchlicht (Focus Light)</entry>
+			<entry>Dunkelheit: Kleines Nebellicht</entry>
+			<entry>Dunkelheit: Kleines Suchlicht</entry>
+			<entry>Dunkelheit: Absolute Dunkelheit</entry>
+		</stringlist>
+		<string id="46">[b]Sichtbarkeit:[/b][br][b]Großes Nebellicht:[/b] Eine große, organische Lichtquelle umgibt Mario[br][b]Lichtstrahl:[/b] Mario kann mit der Wiimote einen kegelförmigen Lichtstrahl ausrichten[br][b]Großes Suchlicht:[/b] Ein großer Scheinwerfer, der seine Größe je nach Bewegung des Spielers ändert[br][b]Kleines Nebellicht:[/b] Eine kleine, organische Lichtquelle umgibt Mario[br][b]Kleines Suchlicht:[/b] Ein kleiner Scheinwerfer, der seine Größe je nach Bewegung des Spielers ändert[br][b]Absolute Dunkelheit:[/b] Sichtbarkeit ist nur durch Feuerbälle, Sterne und bestimmte Sprites gegeben</string>
+		<string id="47">Grenzen (Bounds)</string>
+		<string id="48">Obere Bounds:</string>
+		<string id="49">[b]Obere Bounds:[/b][br] - Positive Werte: Leichteres Scrollen nach oben (110 ist zentriert)[br] - Negative Werte: Schwerer nach oben zu scrollen (30 ist der obere Rand des Bildschirms)[br][br]Werte über 240 können zum sofortigen Tod beim Scrollen des Bildschirms führen</string>
+		<string id="50">Untere Bounds:</string>
+		<string id="51">[b]Untere Bounds:[/b][br] - Positive Werte: Schwieriger, nach unten zu scrollen (65 ist der untere Rand des Bildschirms)[br] - Negative Werte: Leichteres Scrollen nach unten (95 ist zentriert)[br][br]Werte über 100 verhindern, dass der Bildschirm gescrollt wird, bis Mario nicht mehr auf dem Bildschirm ist.</string>
+		<string id="52">Audio</string>
+		<string id="53">Hintergrund-Musik:</string>
+		<string id="54">[b]Hintergrund-Musik:[/b][br]Ändere die im Hintergrund spielende Begleitmusik</string>
+		<string id="55">Klangmodulation:</string>
+		<string id="56">[b]Klangmodulation:[/b][br]Ändert die Klangeffektmodulation passend zum jeweiligen Thema.[br][b]Hinweis:[/b] Die Einstellungen mit einem Sternchen sind identisch mit den Einstellungen ohne Sternchen. „Cavern Echo*“ wird in Retail 02-03 verwendet, während ‚Kein*‘ unbenutzt ist.</string>
+		<stringlist id="57">
+			<entry>Keine Modulation</entry>
+			<entry>Cavern Echo</entry>
+			<entry>Cavern Echo 2</entry>
+			<entry>Underwater Echo</entry>
+			<entry>Boss Room Echo</entry>
+			<entry>Tower Echo</entry>
+			<entry>Castle Echo</entry>
+			<entry>Ghost House Indoor Echo</entry>
+			<entry>Sewer Echo</entry>
+			<entry>Mountain Echo</entry>
+			<entry>Item House/Credits Echo</entry>
+			<entry>Cavern Echo*</entry>
+			<entry>Airship Indoor Echo</entry>
+			<entry>River Cavern Echo</entry>
+			<entry>Lava Cavern Echo</entry>
+			<entry>Keine Modulation*</entry>
+		</stringlist>
+		<string id="58">Boss Flag:</string>
+		<string id="59">[b]Boss Flag:[/b][br]Einstellung für Bosse, damit die Sprites die Musik richtig umschalten können</string>
+		<string id="60">(Keine)</string>
+		<string id="61">Fehler</string>
+		<string id="62" />
+		<string id="63" />
+		<string id="64" />
+		<string id="65" />
+		<string id="66" />
+		<string id="67" />
+		<string id="68">Hintergrund-Musik ID:</string>
+		<string id="69">[b]Hintergrund-Musik ID:[/b][br]Mit dieser erweiterten Option können benutzerdefinierte Musiktitel geladen werden, wenn die entsprechenden ASM-Hacks vorhanden sind.</string>
+		<string id="70">Lakitu Obere Bounds:</string>
+		<string id="71">[b]Lakitu Obere Bounds:[/b][br]Wird anstelle von Obere Grenzen verwendet, wenn mindestens ein Spieler auf einer Lakitu-Wolke reitet.[br][br]Die Werte unterscheiden sich ein wenig von der regulären Einstellung für Obere Grenzen: Der Wert „0“ steht für 5,5 Tiles vom oberen Rand des Bildschirms entfernt, und der Rand ist bei -88.</string>
+		<string id="72">Lakitu Untere Bounds:</string>
+		<string id="73">[b]Lakitu Untere Bounds:[/b][br]Wird anstelle von Untere Grenzen verwendet, wenn mindestens ein Spieler auf einer Lakitu-Wolke reitet.[br][br]Die Werte unterscheiden sich ein wenig von der regulären Einstellung für Untere Grenzen: Der Wert „0“ steht für 5,5 Tiles vom unteren Rand des Bildschirms entfernt, und der Rand ist bei 88.</string>
+		<string id="74" />
+		<string id="75" />
+		<string id="76">Einrasten ins 8x8 Grid</string>
+		<string id="77">Einrasten ins 16x16 Grid</string>
+		<string id="78">[b]Nur nach oben scrollen, wenn man fliegt:[/b][br]Verhindert, dass der Bildschirm nach oben scrollt, es sei denn, der Spieler benutzt einen Propelleranzug oder einen Block.[br][br]Diese Funktion sieht ziemlich glitchy aus und wird nicht empfohlen.</string>
+		<string id="79">[b]Multiplayer-Bildschirmgrößenanpassung:[/b][br]Vergrößert die Höhe des Bildschirms im Multiplayer-Modus. Erfordert, dass die Option „Nur nach oben scrollen, wenn man fliegt“ aktiviert ist.[br][br]Dies verursacht ein sehr fehlerhaftes Verhalten, wenn die Zone viel größer ist als die angepasste Bildschirmhöhe, wenn der Bildschirm mehr als 28 Tiles groß wird oder wenn die Kamera während der Feier am Ende des Levels heranzoomt.</string>
+		<string id="80">Nur nach oben scrollen, wenn man fliegt:</string>
+		<string id="81">Multiplayer-Bildschirmgrößenanpassung:</string>
+		<stringlist id="82">
+			<entry>Kleiner Scheinwerfer und kleines Suchlicht</entry>
+		</stringlist>
+		<string id="83">[b]Sichtbarkeit[/b][br]Kleiner Scheinwerfer und kleines Suchlicht - Ein kleiner, zentrierter Scheinwerfer ermöglicht die Sicht durch Layer 0, und ein kleiner Scheinwerfer, der seine Größe je nach Bewegung des Spielers ändert, ermöglicht die Sicht durch die Dunkelheit.</string>
+		<string id="84">Rendering</string>
+		<string id="85">Normal</string>
+		<string id="86">Der Standard-Kameramodus, der für die meisten Situationen geeignet ist.</string>
+		<string id="87">Statischer Zoom</string>
+		<string id="88">In diesem Modus wird die Kamera im Mehrspielermodus nicht herausgezoomt.</string>
+		<string id="89">Statischer Zoom, Nur Y-Verfolgung</string>
+		<string id="90">In diesem Modus wird die Kamera während des Mehrspielermodus nicht herausgezoomt, sondern horizontal in der Zone zentriert.</string>
+		<string id="91">Statischer Zoom, Event-Kontrolliert</string>
+		<string id="92">In diesem Modus wird die Kamera im Mehrspielermodus nicht herausgezoomt und es werden die eventgesteuerten Kameraeinstellungen aus dem Dialog Kameraprofile verwendet.</string>
+		<string id="93">Nur X-Verfolgung</string>
+		<string id="94">In diesem Modus bewegt sich die Kamera nur in horizontaler Richtung. Sie wird an der Unterkante des Bereichs ausgerichtet.</string>
+		<string id="95">Nur X-Erweiternd</string>
+		<string id="96">In diesem Modus wird die Kamera im Mehrspielermodus nur dann verkleinert, wenn die Spieler horizontal weit voneinander entfernt sind.</string>
+		<string id="97">Nur Y-Verfolgung</string>
+		<string id="98">In diesem Modus bewegt sich die Kamera nur vertikal. Sie wird horizontal in der Zone zentriert.</string>
+		<string id="99">Nur Y-Erweiternd</string>
+		<string id="100">In diesem Modus wird die Kamera im Mehrspielermodus verkleinert, wenn die Spieler vertikal weit voneinander entfernt sind. Die größte Bildschirmgröße wird nur verwendet, wenn ein Spieler mit einem Propelleranzug oder Block fliegt.</string>
+		<string id="101">Bildschirm-Höhen:</string>
+		<string id="102">[b]Bildschirm-Höhen:[/b][br]Wählt die Bildschirmhöhe (in Blöcken) aus, die die Kamera im Mehrspielermodus verwenden kann. Die Kamera wird herausgezoomt, wenn die Spieler zu weit voneinander entfernt sind, und wieder hineingezoomt, wenn sie sich einander nähern. Die Werte stellen Bildschirmhöhen dar, gemessen in Blöcken.[br][br]Im Einzelspielermodus wird nur die kleinste Höhe verwendet.[br][br]Optionen, die mit * oder ** markiert sind, sind fehlerhaft, wenn die Zonen-Bounds auf 0 gesetzt sind; weitere Informationen findest du in den Tooltips zu den oberen/unteren Bounds/Grenzen.[br]Optionen, die mit ** markiert sind, sind auch im Mehrspielermodus unspielbar.</string>
+		<string id="103">Verschiebung Multiplayer Obere Bounds:</string>
+		<string id="104">[b]Verschiebung Multiplayer Obere Bounds:[/b][br]Hinzugefügt zum oberen Bounds-Wert (regulär oder Lakitu) während des Mehrspielermodus und während des Übergangs zurück zum normalen Kameraverhalten, nachdem ein Auto-Scrolling-Controller das Ende seines Pfades erreicht hat.</string>
+		<string id="105">Verschiebung Multiplayer Untere Bounds:</string>
+		<string id="106">[b]Verschiebung Multiplayer Untere Bounds:[/b][br]Hinzugefügt zum unteren Bounds-Wert (regulär oder Lakitu) während des Mehrspielermodus und während des Übergangs zurück zum normalen Kameraverhalten, nachdem ein Auto-Scrolling-Controller das Ende seines Pfades erreicht hat.</string>
+	</section>
+	<section id="Zones">
+		<string id="0">Zone [num]</string>
+	</section>
+	<section id="CamProfsDlg">
+		<string id="0">Kamera Profile</string>
+		<string id="1">Hinzufügen</string>
+		<string id="2">Entfernen</string>
+		<string id="3">Ändern ausgewählter Kameraprofileigenschaften</string>
+		<string id="4">[b]Ändern ausgewählter Kameraprofileigenschaften:[/b][br]Kameraprofile können nur mit dem eventgesteuerten Kameramodus im Dialog „Zonen“ verwendet werden.[br][br]Die Übergänge zwischen den Zoomstufen erfolgen sofort, können aber durch die sorgfältige Verwendung von Zoom-Sprites versteckt werden (206).</string>
+		<string id="5">Auslösende Event ID:</string>
+		<string id="6">[b]Auslösende Event ID:[/b][br]Legt die Event-ID fest, die das Kameraprofil auslösen wird. Wenn ihr von einem anderen Profil zu einem anderen Profil wechselt, wird die Ereignis-ID des vorherigen Profils automatisch deaktiviert (damit das Spiel nicht sofort wieder zu diesem Profil wechselt).</string>
+		<string id="7">Kamera Profil aktiviert bei Event [id]</string>
+	</section>
+</strings>

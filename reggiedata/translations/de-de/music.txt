@@ -1,0 +1,28 @@
+0:Keine
+1:Überwelt
+2:Unterirdisch
+3:Unterwasser
+4:Pilze/Athletisch
+5:Geisterhaus
+6:Pyramiden
+7:Schnee
+8:Lava
+9:Turm
+10:Schloss
+11:Luftschiff
+12:Bonusbereich
+13:Trommelwirbel
+14:Turm-Boss
+15:Schloss-Boss
+16:Krötenhaus
+17:Luftschiff-Boss
+18:Wald
+19:Feindlicher Hinterhalt
+20:Strand
+21:Lava-Höhle
+22:Peach's Schloss
+23:Abspann Jazz
+24:Luftschiff-Trommeln
+25:Bowser
+26:Mega-Bowser
+27:Epilog

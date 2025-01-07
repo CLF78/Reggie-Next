@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<tilesets>
+	<slot num="0" sorted="true">
+		<tileset filename="Pa0_jyotyu" name="Standard" />
+		<tileset filename="Pa0_jyotyu_chika" name="Sottoterra" />
+		<tileset filename="Pa0_jyotyu_setsugen" name="Neve" />
+		<tileset filename="Pa0_jyotyu_yougan" name="Lava" />
+		<tileset filename="Pa0_jyotyu_staffRoll" name="Crediti" />
+	</slot>
+	<slot num="1">
+		<category name="Overworld">
+			<tileset filename="Pa1_kaigan" name="Spiaggia" />
+			<tileset filename="Pa1_sabaku" name="Deserto" />
+			<tileset filename="Pa1_daishizen" name="Foresta" override="Forest Flowers" />
+			<tileset filename="Pa1_nohara" name="Prato" override="Flowers" />
+			<tileset filename="Pa1_gake" name="Montagne" />
+			<tileset filename="Pa1_gake_yougan" name="Montagne (Lava)" />
+			<tileset filename="Pa1_nohara2" name="Cielo" override="Flowers" />
+			<tileset filename="Pa1_setsugen" name="Neve" />
+			<tileset filename="Pa1_koopa_out" name="Vulcano" />
+		</category>
+		<category name="Sottoterra">
+			<tileset filename="Pa1_dokan_naibu" name="Fogna" />
+			<tileset filename="Pa1_chika" name="Sottoterra" />
+			<tileset filename="Pa1_sabaku_chika" name="Sottoterra (Deserto)" />
+			<tileset filename="Pa1_korichika" name="Sottoterra (Ghiacciato)" />
+			<tileset filename="Pa1_kurayami_chika" name="Sottoterra (Acqua)" />
+			<tileset filename="Pa1_suichu" name="Sott'acqua" />
+		</category>
+		<category name="Torre" sorted="true">
+			<tileset filename="Pa1_toride" name="Torre" />
+			<tileset filename="Pa1_toride_sabaku" name="Torre (Deserto)" />
+			<tileset filename="Pa1_toride_kori" name="Torre (Ghiaccio)" />
+			<tileset filename="Pa1_toride_yogan" name="Torre (Lava)" />
+			<tileset filename="Pa1_toride_soto" name="Torre (Cielo)" />
+			<!-- The boss tilesets need to be in this order which is why
+			     this category has sorted="true" -->
+			<tileset filename="Pa1_toride_boss1" name="Battaglia Torre (Larry)" />
+			<tileset filename="Pa1_toride_boss2" name="Battaglia Torre (Roy)" />
+			<tileset filename="Pa1_toride_boss3" name="Battaglia Torre (Lemmy)" />
+			<tileset filename="Pa1_toride_boss4" name="Battaglia Torre (Wendy)" />
+			<tileset filename="Pa1_toride_boss5" name="Battaglia Torre (Iggy)" />
+			<tileset filename="Pa1_toride_boss6" name="Battaglia Torre (Morton)" />
+			<tileset filename="Pa1_toride_boss7" name="Battaglia Torre (Ludwig)" />
+			<tileset filename="Pa1_toride_boss8" name="Battaglia Torre (Kamek)" />
+		</category>
+		<category name="Castello">
+			<tileset filename="Pa1_shiro" name="Castello" />
+			<tileset filename="Pa1_shiro_koopa" name="Castello (Finale)" />
+			<tileset filename="Pa1_shiro_yogan" name="Castello (Lava)" />
+			<tileset filename="Pa1_shiro_sora" name="Castello (Cielo)" />
+			<tileset filename="Pa1_shiro_boss1" name="Battaglia Boss Castello" />
+		</category>
+		<category name="Nave">
+			<tileset filename="Pa1_hikousen" name="Nave (Marrone)" />
+			<tileset filename="Pa1_hikousen2" name="Nave (Rosso)" />
+		</category>
+		<category name="Casa Fantasma" sorted="true">
+			<tileset filename="Pa1_obake" name="Interno Casa Fantasma" />
+			<tileset filename="Pa1_obake_soto" name="Esterno Casa Fantasma" />
+		</category>
+		<category name="Minigioco/Altro">
+			<tileset filename="Pa1_KinokoHouse" name="Casa Toad" />
+			<tileset filename="Pa1_MG_house" name="Interno Casa Toad" />
+			<tileset filename="Pa1_peach_castle" name="Castello di Peach" />
+		</category>
+	</slot>
+	<slot num="2">
+		<category name="Roccie" sorted="true">
+			<tileset filename="Pa2_doukutu"  name="Roccie Marrone" />
+			<tileset filename="Pa2_doukutu2" name="Roccie Blu" />
+			<tileset filename="Pa2_doukutu8" name="Roccie Blu (Ripetizione)" />
+			<tileset filename="Pa2_doukutu3" name="Roccie Marrone (Ondulato)" />
+			<tileset filename="Pa2_doukutu4" name="Roccie Blu (Ondulato)" />
+			<tileset filename="Pa2_doukutu5" name="Roccie Marrone (Ondulato) (Scuro)" />
+			<tileset filename="Pa2_doukutu6" name="Roccie Blu (Ondulato) (Scuro)" />
+			<tileset filename="Pa2_gake"     name="Roccie Montagna (Marrone)" />
+			<tileset filename="Pa2_doukutu7" name="Roccie Montagna (Blu)" />
+		</category>
+		<category name="Nave">
+			<tileset filename="Pa2_hikousen" name="Nave (Marrone)" />
+			<tileset filename="Pa2_hikousen2" name="Nave (Rosso)" />
+		</category>
+		<category name="Altro">
+			<tileset filename="Pa2_sora" name="Bonus" />
+			<tileset filename="Pa2_shiro_koopa" name="Boss Finale" />
+			<tileset filename="Pa2_kori" name="Ghiaccio" />
+			<tileset filename="Pa2_kinoko" name="Steli Fungo" />
+			<tileset filename="Pa2_dokan_naibu" name="Fogna" />
+		</category>
+	</slot>
+	<slot num="3">
+		<category name="Linee Guida &amp; Recinzioni">
+			<tileset filename="Pa3_rail" name="Linee Guida Normali &amp; Recinzioni" override="Full Lines" />
+			<tileset filename="Pa3_rail_white" name="Linee Guida Bianche &amp; Recinzioni" override="Full Lines" />
+			<tileset filename="Pa3_daishizen" name="Foresta &amp; Linee Guida" override="Lines" />
+			<tileset filename="Pa3_MG_house_ami_rail" name="Linee Guida &amp; Recinzioni Minigioco" override="Minigame Lines" />
+		</category>
+		<category name="Altro">
+			<tileset filename="Pa3_shiro_koopa" name="Effetti Boss Finale" />
+			<tileset filename="Pa3_hanatari_saka" name="Piattaforme Inclinate Superiormente Solide" />
+		</category>
+	</slot>
+</tilesets>

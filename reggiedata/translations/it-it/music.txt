@@ -1,0 +1,28 @@
+0:None
+1:Overworld
+2:Sotterraneo
+3:Sott'Acqua
+4:Athletic
+5:Casa Fantasma
+6:Piramidi
+7:Neve
+8:Lava
+9:Torre
+10:Castello
+11:Nave
+12:Area Bonus
+13:Rullo di Tamburi
+14:Boss Torre
+15:Boss Castello
+16:Casa Toad
+17:Boss Nave
+18:Foresta
+19:Imboscata Nemica
+20:Spiaggia
+21:Caverna Lavica
+22:Castello di Peach
+23:Jazz dei Crediti
+24:Rullo di Tamburi della Nave
+25:Bowser
+26:Mega Bowser
+27:Epilogo

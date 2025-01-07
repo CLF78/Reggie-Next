@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<translation name="Italiano (Italian)" version="1.0" translator="Mone">
+    <strings path="strings.xml" />
+    <file name="bga" path="bga.txt" />
+    <file name="bgb" path="bgb.txt" />
+    <file name="entrancetypes" path="entrancetypes.txt" />
+    <file name="levelnames" path="levelnames.xml" />
+    <file name="music" path="music.txt" />
+    <file name="spritecategories" path="spritecategories.xml" />
+    <file name="spritedata" path="spritedata.xml" />
+    <file name="tilesets" path="tilesets.xml" />
+    <file name="ts1_descriptions" path="ts1_descriptions.txt" />
+    <file name="external-actors" path="external/actors.xml" />
+</translation>
